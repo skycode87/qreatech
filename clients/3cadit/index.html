@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="assets/font/flaticon.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!--  Owl Carousel Theme CSS -->
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <style>
+            .portfolio-section .portfolio-item .portfolio-img::before {
+                opacity: 0 !important;
+            }
+
+            .portfolio-section .portfolio-item .portfolio-img .portfolio-text {
+                position: absolute;
+                bottom: -200px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: center;
+                -webkit-transition: .5s;
+                transition: .5s;
+                background: #00000024;
+            }
+
+            .features-section .features-card {
+                text-align: center;
+                -webkit-box-shadow: 0px 2px 20px 0px rgb(12 0 46 / 10%);
+                box-shadow: 0px 2px 20px 0px rgb(12 0 46 / 10%);
+                /* padding: 30px 20px; */
+                margin-bottom: 30px;
+                padding: 0px;
+                -webkit-transition: .5s;
+                transition: .5s;
+                position: relative;
+                background: #fff;
+                z-index: 1;
+                padding-bottom: 20px;
+            }
+
+
+            .features-section .features-card p {
+                padding: 0px 20px;
+                font-size: 18px;
+                padding-bottom: 30px;
+                line-height: 24px;
+            }
+
+            .features-section .features-card a {
+                color: #8FB442;
+                border: #8FB442 1px solid;
+                background: #fff;
+                border-radius: 7px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            .features-section .features-card:hover a.link {
+                color: #8FB442;
+                border: #fff 1px solid;
+                background: #fff;
+            }
+
+
+            .features-section .features-card.feature-one a {
+                color: #D9382F;
+                border: #D9382F 1px solid;
+            }
+
+            .features-section .features-card.feature-one a:hover {
+                color: #D9382F;
+            }
+
+            .features-section .features-card.feature-one i {
+                color: #D9382F;
+                background: #daf4ec;
+            }
+
+            .features-section .features-card.feature-one:hover {
+                background: #D9382F;
+            }
+
+            .features-section .features-card.feature-two a:hover {
+                color: #DCB825;
+            }
+
+            .features-section .features-card.feature-two a {
+                color: #DCB825;
+                border: #DCB825 1px solid;
+            }
+
+            .features-section .features-card.feature-two i {
+                color: #DCB825;
+                background: #ffd7ca;
+            }
+
+            .features-section .features-card.feature-two:hover {
+                background: #DCB825;
+            }
+
+            .features-section .features-card.feature-three a {
+                color: #8FB442;
+                border: #8FB442 1px solid;
+            }
+
+            .features-section .features-card.feature-three a:hover {
+                color: #8FB442;
+            }
+
+
+            .features-section .features-card.feature-three i {
+                color: #8FB442;
+                background: #e1e6f8;
+            }
+
+            .features-section .features-card.feature-three:hover {
+                background: #8FB442;
+            }
+
+
+
+
+            .features-section .features-card.feature-four a {
+                color: #62B1C1;
+                border: #62B1C1 1px solid;
+            }
+
+            .features-section .features-card.feature-four a:hover {
+                color: #62B1C1;
+            }
+
+            .features-section .features-card.feature-four i {
+                color: #62B1C1;
+                background: #fff9e6;
+            }
+
+            .features-section .features-card.feature-four:hover {
+                background: #62B1C1;
+            }
+
+            .about-us {
+                padding-bottom: 30px;
+            }
+
+
+            .service-section .service-text {
+                background: #262626;
+            }
+
+            .service-section .service-text ul li i {
+                background: #009b3a;
+                color: #fff;
+            }
+
+
+            .about-section .about-text .about-us p {
+                font-size: 22px;
+                color: #fff;
+                margin-bottom: 0;
+                font-weight: bold;
+                padding-top: 10px;
+                line-height: 24px;
+            }
+
+            .about-section ul li,
+            .about-section h2,
+            .about-section p {
+                color: #fff;
+            }
+
+            .about-section .about-us i {
+                color: #fff !important;
+                font-size: 70px !important;
+            }
+
+            .newsletter-section .newsletter-area {
+                background: #009b3a;
+                padding: 70px;
+            }
+
+            .section-title.services {
+                max-width: 900px;
+            }
+
+            .theme-button.services {
+                margin: auto;
+                display: block;
+                text-align: center;
+                font-weight: 800;
+                font-size: 20px;
+            }
+
+
+            .theme-button.services a {
+                font-weight: 800;
+                font-size: 20px;
+            }
+
+            .footer-area {
+                background: #262626;
+            }
+
+            .footer-area .footer-widget .footer-social a i {
+                color: #009b3a;
+                font-size: 28px
+            }
+
+            .btn-schedule {
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                background: -webkit-gradient(linear, left top, right top, from(#009b3a), to(#04a440f5));
+                background: linear-gradient(90deg, #009b3a 0%, #04a440f5 100%);
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            .btn-schedule:hover {
+                transform: scale(1.2);
+                color: #fff;
+            }
+
+            .header-area {
+                background: #6c757d24;
+                padding: 15px 0;
+            }
+
+            .main-banner .banner-image {
+                position: absolute;
+                right: 0px;
+                top: 100px;
+                max-width: 700px;
+                -webkit-animation: translatey 8s infinite linear;
+                animation: translatey 8s infinite linear;
+            }
+
+            .about-section {
+                padding-top: 100px;
+                background-color: #262626;
+                background-image: linear-gradient(44deg, #262626 23%, #262626 100%);
+
+            }
+
+            .service-section .service-text.white ul li {
+                padding: 0px;
+                background: transparent;
+                position: relative;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 500;
+                max-width: 400px;
+                list-style: disc;
+                margin: 0px;
+            }
+
+            .service-section .service-text.white p {
+                color: #fff;
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 24px;
+                margin-left: -10px;
+            }
+
+            .service-section .service-text.white i {
+                font-size: 32px;
+                color: #fff;
+            }
+        </style>
+        <!-- Title CSS -->
+        <title>3cad España</title>
+
+        <!-- Favicon Link -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+
+    <body>
+
+        <!-- Pre Loader CSS Start -->
+        <div class="loader-content">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="lds-ripple">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pre Loader CSS End -->
+
+        <!-- Header Section Start -->
+        <header class="header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-9">
+                        <div class="header-left-text">
+                            <ul>
+                                <li>
+                                    <a href="tel:+0123456789">
+                                        <i class="flaticon-call"></i>
+                                        +0123456789
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@3cad.es">
+                                        <i class="flaticon-envelope"></i>
+                                        info@3cad.es
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-pin"></i>
+                                    28/A Street, USA
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-3">
+                        <div class="header-right text-right">
+                            <div class="header-social">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="flaticon-facebook"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><i class="flaticon-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="flaticon-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Navbar Area Start -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo-two.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" alt="logo" width="98px">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle active">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link">PRODUCTOS</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">
+                                                <img width="30px" src="assets/img/products/3cadlite512.png" /> &nbsp;&nbsp;
+                                                <img width="160px" src="assets/img/products/3cadlite_scritta_black512.png" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">
+                                                <img width="30px" src="assets/img//products/3cadnext512.png" /> &nbsp;&nbsp;
+                                                <img width="160px" src="assets/img//products/3cadnext_scritta_black512.png" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">
+                                                <img width="30px" src="assets/img/products/3cadevolution512.png" /> &nbsp;&nbsp;
+                                                <img width="160px" src="assets/img/products/3cadevolution_scritta_black512.png" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">
+                                                <img width="30px" src="assets/img/products/3cadshop512.png" /> &nbsp;&nbsp;
+                                                <img width="160px" src="assets/img/products/3cadshop_scritta_black512.png" />
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle">SERVICIOS</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">Analisis y Consultorías</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">Area Técnica</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#!" class="nav-link">Soporte y documentación</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle"></a>
+                                </li>
+
+                            </ul>
+
+                            <div class="other-option">
+                                <div class="search-bar">
+                                    <a href="#!" class="btn-schedule"> AGENDA UNA DEMO</a>
+
+                                </div>
+
+                                <div class="sidebar-toggle">
+                                    <button type="button" class="btn btn-demo toggle-button navbar-toggle" data-toggle="modal" data-target="#sidebar-right">
+                                        <i class="flaticon-list"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Area End -->
+
+        <!-- Modal Start  -->
+        <div class="right-modal">
+            <div class="modal fade right" id="sidebar-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="logo">
+                            </a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 p-0">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="modal-link">
+                                                    <a href="index-two.html">
+                                                        <img src="assets/img/modal/2.jpg" alt="home one">
+                                                    </a>
+                                                    <h3><a href="index-two.html">INICIO</a></h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="modal-link">
+                                                    <a href="about.html">
+                                                        <img src="assets/img/modal/3.jpg" alt="home one">
+                                                    </a>
+                                                    <h3><a href="about.html">PRODUCTOS</a></h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="modal-link">
+                                                    <a href="service.html">
+                                                        <img src="assets/img/modal/4.jpg" alt="home one">
+                                                    </a>
+                                                    <h3><a href="service.html">SERVICIOS</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <!-- Banner Section Start -->
+        <div class="main-banner">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h1>3CAD es un software de configuración 3D</h1>
+                            <p>
+                                Unifique los procesos de ventas y producción en un único flujo integrado brindando soluciones efectivas, diversificadas e innovadoras a sus problemas.
+                            </p>
+
+                            <div class="theme-button">
+                                <a href="#" class="default-btn">Agenda con nosotros</a>
+                                <a href="https://www.youtube.com/watch?v=Fbps7_mkIT0" class="video-btn popup-vimeo">
+                                    <i class="flaticon-play"></i>
+                                    Ver demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-image">
+                            <!--
+                            <img src="https://www.sigsa.info/content/dam/esrisites/en-us/arcgis/products/city-engine/assets/city-engine-banner-decor.gif" alt="banner image">
+                            -->
+                            <img src="https://static.platzi.com/media/landing-projects/imagen-proyecto-modelado-3d-maya.gif" alt="banner image">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="particles-js"></div>
+        </div>
+        <!-- Banner Section End -->
+
+        <!-- Video Section Start -->
+        <div class="video-section pt-100" style="background: #262626;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="video-text">
+                            <a href="https://www.youtube.com/watch?v=Fbps7_mkIT0" class="popup-vimeo">
+                                <i class="flaticon-play"></i>
+                            </a>
+                            <p>Unifique los procesos de ventas y producción en un único flujo integrado brindando soluciones efectivas, diversificadas e innovadoras a sus problemas con <b>nuestros
+                                    productos.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Section End -->
+
+        <!-- Theory Section Start -->
+        <div class="theory-section ">
+            <div class="container">
+                <div class="row theory-area" style="background: transparent;">
+                    <div class="row features-section">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="features-card feature-one">
+                                <img src="assets/img/products/next.png" width="100%" style="padding-bottom: 30px ;">
+                                <p>Configurador web multiplataforma tridimensional de última generación.</p>
+                                <a class="link">Más información</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="features-card feature-two">
+                                <img src="assets/img/products/evolution.png" width="100%" style="padding-bottom: 30px ;">
+                                <p>Configurador web multiplataforma tridimensional de última generación.</p>
+                                <a class="link">Más información</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="features-card feature-three">
+                                <img src="assets/img/products/lite.png" width="100%" style="padding-bottom: 30px ;">
+                                <p>Configurador web multiplataforma tridimensional de última generación.</p>
+                                <a class="link">Más información</a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="features-card feature-four">
+                                <img src="assets/img/products/shop.png" width="100%" style="padding-bottom: 30px ;">
+                                <p>Configurador web multiplataforma tridimensional de última generación.</p>
+                                <a class="link">Más información</a>
+                            </div>
+                        </div>
+
+                        <!-- Generador de imagenes
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="features-card feature-one">
+                                <img src="assets/img/products/3cadshop512.png" width="220px" style="padding: 30px;">
+                                <img src="assets/img/products/3cadshop_scritta_black512.png" width="200px">
+                                <br />
+                                <br />
+                                
+                            </div>
+                        </div>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Theory Section End -->
+
+
+
+            <!-- Service Section Start -->
+            <div class="service-section" style="margin-top: 70px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7 service-img">
+
+                        </div>
+                        <div class="col-md-7 offset-md-5 p-0">
+                            <div class="service-text white">
+                                <h2>
+                                    ¿Qué ofrecemos?
+                                </h2>
+
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="about-us">
+                                            <i class="flaticon-podium icon-one"></i>
+                                            <p>Atención al Cliente Profesional </p>
+                                            <ul>
+                                                <li>Consultoría</li>
+                                                <li>Gestión de Catálogos</li>
+                                                <li> Capacitación</li>
+                                                <li> Linea Directa</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="about-us">
+                                            <i class="flaticon-customer-service icon-two"></i>
+                                            <p>Fábrica 4.0 y Producción </p>
+                                            <ul>
+                                                <li>Integración de Software de Gestión ERP</li>
+                                                <li>Integración CAD / CAM con Maquinas CNC</li>
+                                                <li>Documentación Técnica y Tramitación Personalizada</li>
+                                                <li> Lista de Materiales con Gráfica Dinámica y Paramétrica</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="about-us">
+                                            <i class="flaticon-handshake icon-three"></i>
+                                            <p>Render Farm </p>
+                                            <ul>
+                                                <li>Descripción General</li>
+                                                <li>Funcionamiento</li>
+                                                <li>Rapidez</li>
+                                                <li>Servidores Dedicados</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="about-us">
+                                            <i class="flaticon-handshake icon-three"></i>
+                                            <p>Realidad Virtual </p>
+                                            <ul>
+                                                <li>Realidad Inmersiva</li>
+                                                <li>Realidad Aumentada</li>
+                                                <li>Realidad Mixta</li>
+                                                <li>Mapa de Experiencia del Cliente</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="theme-button services" style="padding-top: 60px;">
+                                    <a href="about.html" class="default-btn" style="border: none">Conoce al detalle nuestros servicios</a>
+                                </div>
+                                <!--
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Innovación
+
+
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Creatividad
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Tecnología
+                                    </li>
+
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Cobertura mundial
+                                    </li>
+
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Programación
+                                    </li>
+
+                                    <li>
+                                        <i class="flaticon-checked"></i>
+                                        Apoyo
+                                    </li>
+
+
+
+                                </ul>
+                            -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Section End -->
+
+
+            <section class="service-style-three pt-100 pb-70">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span>El uso de las herramientas de presentación de productos adecuadas puede marcar la diferencia.</span>
+                        <h2>Confía en nuestra experiencia</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-podium"></i>
+                                <h3>Mejora tu producto</h3>
+                                <p>
+                                    Aprovecha al máximo todo el potencial de la tarjeta de video delegando en ella todas las funciones relacionadas con los efectos gráficos fotorrealistas; puede
+                                    trabajar directamente con una vista en tiempo real. </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-handshake"></i>
+                                <h3>La adquisición de la orden</h3>
+                                <p>En una empresa es un proceso complejo y la vez estratégico,
+                                    que involucra varias funciones, comenzando desde la comercial,
+                                    pasando por la oficina técnica, hasta llegar a producción y logística.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-technical-support"></i>
+                                <h3>Crear ventajas competitivas</h3>
+                                <p>Ser capaz de optimizar este proceso agilizándolo
+                                    eliminando errores, reportando información completa,
+                                    reduciendo tiempos de respuesta y medios de desperdicio</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-megaphone"></i>
+                                <h3>Configuración tridimensional del producto</h3>
+                                <p>Para que la adquisición de pedidos sea un proceso fluido,
+                                    integrado, potente y estimulante,
+                                    hemos desarrollado soluciones de software innovadoras. </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-back-in-time"></i>
+                                <h3>Haz la diferencia</h3>
+                                <p>La adquisición del pedido comienza con la presentación del producto,
+                                    la cotización y la descripción de lo que recibirá el cliente.
+                                    El uso de las herramientas
+                                    adecuadas puede marcar la diferencia.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="service-card">
+                                <i class="flaticon-back-in-time"></i>
+                                <h3>Intuitivo y simple de usar</h3>
+                                <p>La interfaz de usuario de 3CAD ha sido diseñada
+                                    según criterios ergonómicos para un uso más rápido y funcional.
+                                    El diseño se realiza gracias a un innovador
+                                    configurador gráfico 3D.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <img style="margin: auto; max-width: 600px;" src="https://www.sigsa.info/content/dam/esrisites/en-us/arcgis/products/city-engine/assets/city-engine-banner-decor.gif"
+                            alt="banner image">
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section Start -->
+
+
+            <section class="about-section pb-100">
+
+                <div class="container">
+                    <div class="row align-items-center">
+
+
+
+                        <div class="section-title text-center services">
+                            <h2> "3CAD está siendo utilizado con éxito por un número cada vez mayor de empresas, y tú puedes formar parte de esto"
+                            </h2>
+                            <p>
+                                Más de 600 empresas de fabricación de todo el mundo han elegido 3CAD. <br>
+                                Más de 200.000 tiendas utilizan 3CAD.
+                            </p>
+                            <div class="theme-button services" style="padding-top: 60px;">
+                                <a href="about.html" class="default-btn" style="border: none">Agenda una demostración</a>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- About Section End -->
+
+            <!-- Blog Section Start -->
+            <section class="blog-section pt-100 pb-70">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span>Nuestro Blog</span>
+                        <h2>Últimos articulos</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/1.jpg" alt="blog image"></a>
+                                    <div class="blog-date">
+                                        <span>21 Feb</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+
+                                    <h3><a href="blog-details.html">COVID-19 Noticias</a></h3>
+
+                                    <div class="post-info">
+                                        <img src="assets/img/blog/author-1.png" alt="blog author">
+
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Leer más
+                                            <i class="flaticon-right-chevron"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/2.jpg" alt="blog image"></a>
+                                    <div class="blog-date">
+                                        <span>22 Feb</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+
+                                    <h3><a href="blog-details.html">3CAD Nueva sede en España</a></h3>
+
+                                    <div class="post-info">
+                                        <img src="assets/img/blog/author-2.png" alt="blog author">
+
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Leer más
+                                            <i class="flaticon-right-chevron"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/3.jpg" alt="blog image"></a>
+                                    <div class="blog-date">
+                                        <span>23 Feb</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text">
+
+                                    <h3><a href="blog-details.html">
+                                            Historia del caso Cattelan </a></h3>
+
+                                    <div class="post-info">
+                                        <img src="assets/img/blog/author-3.png" alt="blog author">
+
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Leer más
+                                            <i class="flaticon-right-chevron"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog Section End -->
+
+            <!-- Contact Section Start -->
+            <div class="contact-section pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 p-0 contact-img">
+                            <img src="assets/img/contact.jpg" alt="contact">
+                        </div>
+
+                        <div class="col-lg-6 p-0">
+                            <div class="contact-form">
+                                <div class="contact-text">
+                                    <h3>Contactanos</h3>
+                                    <p>Sientete libre de agendar una reunión para solventar dudas e inquietudes</p>
+                                </div>
+
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Nombre">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Email">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Asunto">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="message-field" id="message" cols="30" rows="5" required data-error="Por favor escribe tu mensaje"
+                                                    placeholder="Message"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <button type="submit" class="default-btn contact-btn">
+                                                Enviar mensaje
+                                            </button>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <img src="assets/img/shapes/1.png" class="contact-shape" alt="shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Section End -->
+
+
+
+            <!-- Footer Section Start -->
+            <footer class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/products/logo_WHITE.png" alt="logo">
+                                    </a>
+                                </div>
+
+
+
+                                <div class="footer-social" style="margin: auto; text-align: center;">
+                                    <a href="#"><i class="flaticon-facebook"></i></a>
+                                    <a href="#"><i class="flaticon-instagram"></i></a>
+                                    <a href="#"><i class="flaticon-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="footer-widget pl-75">
+                                <h3>PRODUCTOS</h3>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <img style="width:250px;" class="mb-1" src="assets/img/products/3cad_evolution_copy.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <img style="width:250px;" class="mb-1" src="assets/img/products/3cad_lite_copy.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <img style="width:250px;" class="mb-1" src="assets/img/products/3cad_next_copy.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <img style="width:250px;" class="mb-1" src="assets/img/products/3cad_shop.png">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="footer-widget pl-75">
+                                <h3> SERVICIOS</h3>
+
+
+
+                                <ul>
+                                    <li>
+                                        <a href="service.html">
+                                            <i class="flaticon-right-chevron"></i>
+                                            Atención al Cliente Profesional
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            <i class="flaticon-right-chevron"></i>
+
+
+                                            Fábrica 4.0 y Producción
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            <i class="flaticon-right-chevron"></i>
+                                            Render Farm
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            <i class="flaticon-right-chevron"></i>
+                                            Realidad Virtual
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 lh-1 text-left">
+                                <p>©Copyright 3cad España. Todos los derechos reservados.</p>
+                            </div>
+                            <div class="col-md-6 lh-1 text-right">
+                                <ul>
+                                    <li><a href="privacy.html">Politicas de privacidad</a></li>
+                                    <li><a href="#">Terminos y condiciones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Section End -->
+
+            <!-- Jquery JS -->
+            <script src="assets/js/jquery-2.2.4.min.js"></script>
+            <!-- Popper JS -->
+            <script src="assets/js/popper.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="assets/js/bootstrap.min.js"></script>
+            <!-- Subscribe From JS -->
+            <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+            <!-- Form Validator JS -->
+            <script src="assets/js/form-validator.min.js"></script>
+            <!-- Contact JS -->
+            <script src="assets/js/contact-form-script.js"></script>
+            <!-- Owl Carousel Slider JS -->
+            <script src="assets/js/owl.carousel.min.js"></script>
+            <!-- Magnific Popup JS -->
+            <script src="assets/js/jquery.magnific-popup.min.js"></script>
+            <!-- Mixit Up JS -->
+            <script src="assets/js/jquery.mixitup.min.js"></script>
+            <!-- Meanmenu JS -->
+            <script src="assets/js/meanmenu.js"></script>
+            <!-- Custom JS -->
+            <script src="assets/js/custom.js"></script>
+    </body>
+
+</html>
